@@ -1,0 +1,40 @@
+<div class="todo">
+  <app-header></app-header>
+  <main class="content main">
+    <div #inicio id="Inicio">
+      <app-inicio></app-inicio>
+    </div>
+    <div #about id="Acerca">
+      <app-about></app-about>
+    </div>
+
+    <div #services id="Servicios">
+      <app-service></app-service>
+    </div>
+
+    <div #portfolio id="Portafolio">
+      <app-portfolio></app-portfolio>
+      <app-project></app-project>
+      <app-testimonial></app-testimonial>
+    </div>
+
+    <div #contact id="Contacto">
+      <app-contact></app-contact>
+
+    </div>
+
+
+
+
+
+
+
+
+    <button class="top" (click)="onClick(inicio)" [ngClass]="{ visible: reachedTheEnd, hidden: !reachedTheEnd }">
+      <svg>
+        <use href="./assets/icons/icon.svg#icon-chevron-with-circle-up"></use>
+      </svg>
+    </button>
+    <app-footer></app-footer>
+  </main>
+</div>
